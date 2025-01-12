@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <center>
+      <button id="clear" onclick="handleClear()">Clear</button>
+      <div>
+        <input id="input-value" type="text" readonly placeholder="0" />
+      </div>
+      <div>
+        <div>
+          <button id="ff" onclick="handleButtonValue('1')">1</button>
+          <button onclick="handleButtonValue('2')">2</button>
+          <button onclick="handleButtonValue('3')">3</button>
+          <button onclick="handleButtonValue('+')">+</button>
+        </div>
+        <div>
+          <button onclick="handleButtonValue('4')">4</button>
+          <button onclick="handleButtonValue('5')">5</button>
+          <button onclick="handleButtonValue('6')">6</button>
+          <button onclick="handleButtonValue('-')">-</button>
+        </div>
+        <div>
+          <button onclick="handleButtonValue('7')">7</button>
+          <button onclick="handleButtonValue('8')">8</button>
+          <button onclick="handleButtonValue('9')">9</button>
+          <button onclick="handleButtonValue('*')">*</button>
+        </div>
+        <div>
+          <button onclick="handleButtonValue('0')">0</button>
+          <button onclick="handleButtonValue('.')">.</button>
+          <button onclick="handleCalculate()">=</button>
+          <button onclick="handleButtonValue('/')">/</button>
+        </div>
+      </div>
+    </center>
+
+    <script src="script.js"></script>
+  </body>
+</html>

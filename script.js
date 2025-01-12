@@ -6,7 +6,8 @@ document.addEventListener("keydown", function (e) {
     e.key == "+" ||
     e.key == "-" ||
     e.key == "*" ||
-    e.key == "/"
+    e.key == "/" ||
+    e.key == "."
   ) {
     handleButtonValue(e.key);
   }
